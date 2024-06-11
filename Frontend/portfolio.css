@@ -1,0 +1,200 @@
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #202020; /* YouTube dark header background color */
+    padding: 10px 20px;
+    color: #ffffff;
+    position: fixed; 
+    top: 0;
+    width: 100%; 
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+#gallery {
+    width: 100%;
+    height: 400px; 
+    object-fit: cover; 
+    display: block;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+button#but {
+    background-color: #606060; 
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+button#but:hover {
+    background-color: #505050; 
+}
+
+/* Dark mode and light mode styles for the body and text */
+.dark-mode {
+    background-color: #0d1117;
+    color: #ffffff;
+}
+
+.light-mode {
+    background-color: #ffffff;
+    color: #0d1117;
+}
+
+.card, .review-card{
+    width: 300px;
+    padding: 20px;
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    backdrop-filter: blur(10px); 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.card:hover, .review-card:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Lighter semi-transparent white on hover */
+}
+
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.slide-container {
+    display: flex;
+    gap: 20px;
+}
+
+.slide-arrow {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+}
+
+/* General form styles */
+form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    border: 2px solid #8b3ffc;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    border: 2px solid #8b3ffc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #4285f4;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+form button {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 14px;
+    
+    background-color: #8b3ffc;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #732bb6;
+}
+
+
+footer {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px; 
+    height: auto;
+}
+
