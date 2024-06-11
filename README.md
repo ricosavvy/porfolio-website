@@ -28,8 +28,8 @@ This project is a backend server built using Node.js and Express.js to support a
 1. **Clone the repository:**
 
     ```sh
-    git clone https://github.com/ricosavvy/portfolio-backend.git
-    cd portfolio-backend
+    git clone https://github.com/ricosavvy/portfolio-website.git
+    cd portfolio-website
     ```
 
 2. **Install dependencies:**
