@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivwananji Simbule Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <header>
+        <h1>Ivwananji Simbule</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <button id="but">light/Dark</button>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home">
+            <img src="./images/download(1).jpeg" alt="Portfolio Image" id="gallery">
+            <h2>Welcome To My Portfolio</h2>
+            <p>My name is Ivwananji Simbule, a Computer Science student at the University of Zambia. I have a keen interest in web development and a passion for E-commerce.</p>
+        </section>
+        
+        <section id="portfolio">
+            <h2>My GitHub Repositories</h2>
+            <div class="slider">
+                <button class="slide-arrow" id="slide-left-repo">&#9664;</button>
+                <div class="slide-container" id="repo-slide-container">
+                    <!-- GitHub Repo cards will be dynamically added here -->
+                </div>
+                <button class="slide-arrow" id="slide-right-repo">&#9654;</button>
+            </div>
+        </section>
+        
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>React.js</li>
+            </ul>
+        </section>
+        
+        <section id="reviews">
+            <h2>Leave a Review</h2>
+            <form id="review-form">
+                <label for="email">Email:</label>
+                <input type="email" id="review-email" name="email" required>
+                <label for="comment">Comment:</label>
+                <textarea id="review-comment" name="comment" required></textarea>
+                <label for="rating">Rating (1-5):</label>
+                <input type="number" id="review-rating" name="rating" min="1" max="5" required>
+                <button type="submit">Submit Review</button>
+            </form>
+            <div class="slider">
+                <button class="slide-arrow" id="slide-left-review">&#9664;</button>
+                <div class="slide-container" id="review-slide-container">
+                    <!-- Review cards will be dynamically added here -->
+                </div>
+                <button class="slide-arrow" id="slide-right-review">&#9654;</button>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="container">
+                <form id="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Connect with me:</p>
+        <ul class="social-icons">
+            <li><a href="https://github.com/ricosavvy" target="_blank"><img src="images/github.png" alt="GitHub"></a></li>
+            <li><a href="mailto:ivwananji501@gmail.com" target="_blank"><img src="images/g.jpeg" alt="Gmail"></a></li>
+        </ul>
+        <p>That's all about me</p>
+    </footer>
+    
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
