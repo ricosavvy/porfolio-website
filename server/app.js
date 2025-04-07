@@ -1,10 +1,15 @@
 // backend/app.js
+const path = require('path');
+require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const db = require('./config/db');
 const nodemailer = require('nodemailer');
-require('dotenv').config();
+
+console.log("GitHub API Token RETRIEVED" || "not found");
+
 
 const app = express();
 const PORT = 3000;

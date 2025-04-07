@@ -5,24 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ivwananji Simbule Portfolio</title>
     <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 </head>
 <body>
     <header>
         <h1>Ivwananji Simbule</h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <button id="but">light/Dark</button>
-            </ul>
+                <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#portfolio"><i class="fa-solid fa-briefcase"></i> About</a></li>
+                <li><a href="#skills"><i class="fa-solid fa-toolbox"></i> Skills</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-message"></i> Contact</a></li>
+               <!-- <button id="but"><a><i class="fa-solid fa-circle-half-stroke"></i></a></button>
+-->         </ul>    
         </nav>
     </header>
     
     <main>
         <section id="home">
             <img src="./images/download(1).jpeg" alt="Portfolio Image" id="gallery">
+            <div id="social-media">
+                <h2>Follow me on Social Media</h2>
+                <div class="social-icons">
+                  <a href="#"><img src="./images/icons/facebook.png" alt="Facebook"></a>
+                  <a href="#"><img src="./images/icons/twitter.png" alt="Twitter"></a>
+                  <a href="#"><img src="./images/icons/instagram.png" alt="Instagram"></a>
+                  <a href="#"><img src="./images/icons/linkedin.png" alt="LinkedIn"></a>
+                </div>
+        </section>
+        <section>
             <h2>Welcome To My Portfolio</h2>
             <p>My name is Ivwananji Simbule, a Computer Science student at the University of Zambia. I have a keen interest in web development and a passion for E-commerce.</p>
         </section>
@@ -41,15 +53,11 @@
         <section id="skills">
             <h2>Skills</h2>
             <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>React.js</li>
+                <li>HTML5</li> <li>CSS3</li> <li>JavaScript</li> <li>Python</li> <li>React.js</li>
             </ul>
         </section>
         
-        <section id="reviews">
+        <section id="interact">
             <h2>Leave a Review</h2>
             <form id="review-form">
                 <label for="email">Email:</label>
@@ -69,7 +77,7 @@
             </div>
         </section>
         
-        <section id="contact">
+        <section id="interact">
             <h2>Contact Me</h2>
             <div class="container">
                 <form id="contact-form">
